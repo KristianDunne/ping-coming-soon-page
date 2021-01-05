@@ -65,6 +65,12 @@ body {
     font-size: 1rem;
     font-weight: 600;
     margin-top: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+}
+
+.form .submit-button:hover {
+    background-color: hsla(223, 87%, 63%, 0.8);
 }
 
 .form .input-field::-webkit-input-placeholder {
@@ -108,6 +114,12 @@ body {
     color: hsl(223, 87%, 63%);
     margin: 0 0.5rem;
     font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.socials i:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: #ffffff;
 }
 
 .footer {
@@ -116,7 +128,6 @@ body {
     font-size: 0.8rem;
     margin-top: 3rem;
 }
-
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
@@ -142,11 +153,13 @@ body {
 
     .form .input-field {
         width: 75%;
+        font-size: 0.8rem;
     }
 
     .form .submit-button {
         margin: 0 0 0 1rem;
         width: 25%;
+        font-size: 0.8rem;
     }
 
 
