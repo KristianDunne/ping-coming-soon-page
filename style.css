@@ -7,6 +7,8 @@ html {
 body {
     font-family: 'Libre Franklin', sans-serif;
     padding: 50px 25px;
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 .main {
@@ -113,4 +115,39 @@ body {
     color: hsl(0, 0%, 59%);
     font-size: 0.8rem;
     margin-top: 3rem;
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .heading {
+        margin-top: 2rem;
+    }
+
+    .sub-heading {
+        margin-top: 1rem;
+    }
+
+    .hero-image {
+        margin: 4rem 0;
+
+    }
+
+    .form {
+        margin-top: 1.5rem;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form .input-field {
+        width: 75%;
+    }
+
+    .form .submit-button {
+        margin: 0 0 0 1rem;
+        width: 25%;
+    }
+
+
 }
