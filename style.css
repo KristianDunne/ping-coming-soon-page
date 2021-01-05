@@ -69,6 +69,26 @@ body {
     cursor: pointer;
 }
 
+.form .input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form .error-message {
+    color: hsl(354, 100%, 66%);
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 5px 0 0;
+    font-style: italic;
+    display: none
+}
+
+.form .error-input {
+    border-color: hsl(354, 100%, 66%);
+}
+
 .form .submit-button:hover {
     background-color: hsla(223, 87%, 63%, 0.8);
 }
@@ -149,18 +169,24 @@ body {
         flex-direction: row;
         width: 100%;
         justify-content: center;
+        align-items: baseline;
     }
 
     .form .input-field {
-        width: 75%;
         font-size: 0.8rem;
     }
 
     .form .submit-button {
         margin: 0 0 0 1rem;
-        width: 25%;
         font-size: 0.8rem;
     }
 
+    .form .input-group {
+        width: 75%;
+        text-align: left;
+    }
 
+    .form .input-group .error-message{
+        margin-left: 2rem;
+    }
 }

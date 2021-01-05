@@ -21,8 +21,12 @@
     </div>
     <div class="heading">We are launching <span class="strong">soon!</span></div>
     <div class="sub-heading">Subscribe and get notified</div>
-    <form action="#" class="form">
-      <input required type="email" class="input-field" placeholder="Your email address...">
+    <form action="#" class="form" name="signupForm" onsubmit="return validateForm()">
+      
+      <div class="input-group error">
+        <input id="emailInput" name="email" required type="text" class="input-field" placeholder="Your email address...">
+        <div id="invalidEmailMsg" class="error-message">Please provide a valid email address</div>
+      </div>
       <button type="submit" class="submit-button">Notify Me</button>
     </form>
   </div>
@@ -40,5 +44,21 @@
   </form>
   </div>
 </body>
+
+
+<script>
+  function validateForm() {
+    
+    let emailInput = document.forms["signupForm"]["email"].value;
+
+    if(!/\S+@\S+\.\S+/.test(emailInput)){
+      document.getElementById("invalidEmailMsg").style.display = "block";
+      document.getElementById("emailInput").classList.add("error-input")
+      return false
+    }
+
+  }
+  </script>
+
 
 </html>
